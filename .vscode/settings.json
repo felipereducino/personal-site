@@ -1,0 +1,31 @@
+{
+  // Enable format on save
+  "editor.formatOnSave": true,
+
+  // Set Prettier as the default formatter for supported languages
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  // Specify the file types ESLint should validate
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+
+  // Automatically fix ESLint issues on save (including Prettier formatting)
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "always"
+  }
+}

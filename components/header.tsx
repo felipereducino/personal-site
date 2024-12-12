@@ -1,32 +1,44 @@
-"use client";
+'use client'
 
-import { useState } from "react";
-import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
-import Link from "next/link";
+import { useState } from 'react'
+import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'
+import Link from 'next/link'
 
 const Header = () => {
-  const [navOpen, setNavOpen] = useState(false);
+  const [navOpen, setNavOpen] = useState(false)
 
   const toggleNav = () => {
-    setNavOpen(!navOpen);
-  };
+    setNavOpen(!navOpen)
+  }
 
   return (
     <header className="w-full p-4">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         {/* Home link */}
-        <Link href="/" className="text-xl font-bold" style={{ color: '#000000' }}>
+        <Link
+          href="/"
+          className="text-xl font-bold"
+          style={{ color: '#000000' }}
+        >
           Home
         </Link>
 
         <nav className="hidden md:flex space-x-8">
-          <a href="/works" className="font-bold transition-opacity duration-200 hover:opacity-80" style={{ color: '#000000' }}>
+          <a
+            href="/works"
+            className="font-bold transition-opacity duration-200 hover:opacity-80"
+            style={{ color: '#000000' }}
+          >
             Works
           </a>
-          <Link href="/blog" className="font-bold transition-opacity duration-200 hover:opacity-80" style={{ color: '#000000' }}>
+          {/* <Link href="/blog" className="font-bold transition-opacity duration-200 hover:opacity-80" style={{ color: '#000000' }}>
             Blog
-          </Link>
-          <a href="#contact" className="font-bold transition-opacity duration-200 hover:opacity-80" style={{ color: '#000000' }}>
+          </Link> */}
+          <a
+            href="#contact"
+            className="font-bold transition-opacity duration-200 hover:opacity-80"
+            style={{ color: '#000000' }}
+          >
             Contact
           </a>
         </nav>
@@ -47,20 +59,32 @@ const Header = () => {
       </div>
 
       <div
-        className={`md:hidden mt-4 flex flex-col items-start space-y-4 ${navOpen ? "block" : "hidden"}`}
+        className={`md:hidden mt-4 flex flex-col items-start space-y-4 ${navOpen ? 'block' : 'hidden'}`}
       >
-        <a href="#works" className="font-bold transition-opacity duration-200 hover:opacity-80" style={{ color: '#000000' }}>
+        <a
+          href="#works"
+          className="font-bold transition-opacity duration-200 hover:opacity-80"
+          style={{ color: '#000000' }}
+        >
           Works
         </a>
-        <Link href="/blog" className="font-bold transition-opacity duration-200 hover:opacity-80" style={{ color: '#000000' }}>
+        <Link
+          href="/blog"
+          className="font-bold transition-opacity duration-200 hover:opacity-80"
+          style={{ color: '#000000' }}
+        >
           Blog
         </Link>
-        <a href="#contact" className="font-bold transition-opacity duration-200 hover:opacity-80" style={{ color: '#000000' }}>
+        <a
+          href="#contact"
+          className="font-bold transition-opacity duration-200 hover:opacity-80"
+          style={{ color: '#000000' }}
+        >
           Contact
         </a>
       </div>
     </header>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header
