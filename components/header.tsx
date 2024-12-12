@@ -24,13 +24,13 @@ const Header = () => {
         </Link>
 
         <nav className="hidden md:flex space-x-8">
-          <a
+          {/* <a
             href="/works"
             className="font-bold transition-opacity duration-200 hover:opacity-80"
             style={{ color: '#000000' }}
           >
             Works
-          </a>
+          </a> */}
           {/* <Link href="/blog" className="font-bold transition-opacity duration-200 hover:opacity-80" style={{ color: '#000000' }}>
             Blog
           </Link> */}
