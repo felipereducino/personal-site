@@ -61,20 +61,20 @@ const Header = () => {
       <div
         className={`md:hidden mt-4 flex flex-col items-start space-y-4 ${navOpen ? 'block' : 'hidden'}`}
       >
-        <a
+        {/* <a
           href="#works"
           className="font-bold transition-opacity duration-200 hover:opacity-80"
           style={{ color: '#000000' }}
         >
           Works
-        </a>
-        <Link
+        </a> */}
+        {/* <Link
           href="/blog"
           className="font-bold transition-opacity duration-200 hover:opacity-80"
           style={{ color: '#000000' }}
         >
           Blog
-        </Link>
+        </Link> */}
         <a
           href="#contact"
           className="font-bold transition-opacity duration-200 hover:opacity-80"
